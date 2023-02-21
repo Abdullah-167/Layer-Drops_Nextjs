@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+    @apply  max-w-7xl mx-auto px-4
+      
+    
+}
+
+.border-gradient {
+    border-color: radial-gradient(circle, rgba(239,239,244,1) 0%, rgba(213,213,213,1) 38%, rgba(255,255,255,1) 100%);
+}
