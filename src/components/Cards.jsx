@@ -11,12 +11,11 @@ import { GiCommercialAirplane } from 'react-icons/gi';
 const Cards = () => {
     return (
         <div className='container'>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-8 pb-28 px-5'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 pb-28 px-5'>
                 {cards.map((item, index) => {
                     return (
-                        <div key={index} className='insurance-card'>
-                            <div className='flex justify-center mt-10 mb-7 bg-dark rounded-[100%] w-[70px] h-[70px] p-5 mx-auto'>
-                                
+                        <div key={index} className='insurance-card bg-[#1c2a44] rounded-md  transition-all duration-500 hover:-translate-y-3 border-b-transparent border-b-2 hover:border-b-off-white hover:rounded-none'>
+                            <div className='flex justify-center mt-10 mb-7 bg-primary rounded-[100%] w-[70px] h-[70px] p-5 mx-auto'>
                                 <span className='text-white text-4xl '>  {item.cardIcon} </span>
                             </div>
                             <div>

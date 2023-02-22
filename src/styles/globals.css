@@ -17,11 +17,53 @@ body {
 }
 
 .container {
-    @apply  max-w-7xl mx-auto px-4
+    @apply  max-w-6xl mx-auto px-4
       
     
 }
 
 .border-gradient {
     border-color: radial-gradient(circle, rgba(239,239,244,1) 0%, rgba(213,213,213,1) 38%, rgba(255,255,255,1) 100%);
+}
+
+.menu {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+  }
+  
+  .menu.open {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  
+  .cursor-circle {
+    position: fixed;
+    z-index: 9999;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #2a81e3;
+    background-color: transparent;
+    pointer-events: none;
+    transition: all 0.1s ease-in;
+}
+
+
+.curved-line {
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    border-radius: 50%;
+    transform-origin: top left;
+    transform: rotate(45deg);
+  }
+
+
+.bg-img {
+    background-image: url(../../public/images/lines.png);
+    background-repeat: no-repeat;
+    width: 500%;
+    background-position: center;
 }
